@@ -9,5 +9,6 @@ Array.prototype.contains = function (value) {
 };
 
 const myArray = [1, 2, 3, 4, 5, 9, 7, 9, 9, 10];
+myArray.push(11);
 
-console.log(myArray.contains(28)); // 8
+console.log(myArray.contains(30)); // 8
