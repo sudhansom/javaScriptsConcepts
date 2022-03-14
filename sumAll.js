@@ -1,5 +1,5 @@
-const sum = function (a) {
-  return function (b) {
+const sum = (a) => {
+  return (b) => {
     if (b) {
       return sum(a + b);
     } else {
@@ -7,4 +7,4 @@ const sum = function (a) {
     }
   };
 };
-console.log(sum(1)(2)(3)(4));
+console.log(sum(1)(2)(3)(4)());
