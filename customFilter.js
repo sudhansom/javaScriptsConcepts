@@ -1,4 +1,4 @@
-Array.prototype.customMap = function (callback) {
+Array.prototype.customFilter = function (callback) {
   let myArray = [];
   for (let i = 0; i < this.length; i++) {
     if (callback(this[i], i, this)) {
@@ -9,7 +9,7 @@ Array.prototype.customMap = function (callback) {
 };
 const givenArray = [1, 2, 3, 4, 5];
 
-const result = givenArray.customMap((item) => {
+const result = givenArray.customFilter((item) => {
   return item % 2 == 0;
 });
 console.log(result);
