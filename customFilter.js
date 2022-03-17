@@ -7,7 +7,7 @@ Array.prototype.customFilter = function (callback) {
   }
   return myArray;
 };
-const givenArray = [1, 2, 3, 4, 5];
+const givenArray = [1, 2, 3, 4, 5, 6];
 
 const result = givenArray.customFilter((item) => {
   return item % 2 == 0;
