@@ -9,9 +9,11 @@ let name2 = {
   age: 38,
 };
 
-let displayName = function () {
-  console.log(`${this.firstName} ${this.lastName} of age ${this.age}`);
+let displayName = function (city, country) {
+  console.log(
+    `${this.firstName} ${this.lastName} of age ${this.age} who lives in ${city} , ${country}`
+  );
 };
 
-displayName.call(name1);
-displayName.call(name2);
+displayName.call(name1, "Lalim", "Nepal");
+displayName.call(name2, "Kathmandu", "Nepal");
