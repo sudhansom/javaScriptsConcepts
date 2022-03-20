@@ -15,5 +15,5 @@ let displayName = function (city, country) {
   );
 };
 
-displayName.apply(name1, ["Lalim", "Nepal"]);
+displayName.call(name1, ...["Lalim", "Nepal"]);
 displayName.apply(name2, ["Kathmandu", "Nepal"]);
