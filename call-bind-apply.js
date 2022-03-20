@@ -15,6 +15,6 @@ let displayName = function (city, country) {
   );
 };
 
-const finalDisplay = displayName.bind(name1, ...["Lalim", "Nepal"]);
+const finalDisplay = displayName.bind(name1, ...["Lalim"]);
 displayName.apply(name2, ["Kathmandu", "Nepal"]);
-finalDisplay();
+finalDisplay("Nepal");
