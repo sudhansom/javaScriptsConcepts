@@ -6,4 +6,4 @@ const promise = new Promise((resolve, reject) => {
 
 console.log(promise);
 
-promise.then(console.log).catch((error) => console.log(error));
+promise.then(console.log).catch(console.log);
