@@ -6,6 +6,4 @@ const promise = new Promise((resolve, reject) => {
 
 console.log(promise);
 
-setTimeout(() => {
-  console.log(promise);
-}, 1500);
+promise.then(console.log).catch((error) => console.log(error));
