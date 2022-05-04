@@ -5,3 +5,7 @@ const promise = new Promise((resolve, reject) => {
 });
 
 console.log(promise);
+
+setTimeout(() => {
+  console.log(promise);
+}, 1500);
