@@ -1,6 +1,6 @@
 const promise = new Promise((resolve, reject) => {
   setTimeout(() => {
-    resolve(2);
+    reject("ooh no... smthing went wrong");
   }, 1000);
 });
 
