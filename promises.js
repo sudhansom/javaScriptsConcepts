@@ -1,5 +1,7 @@
 const promise = new Promise((resolve, reject) => {
-  resolve(2);
+  setTimeout(() => {
+    resolve(2);
+  }, 1000);
 });
 
 console.log(promise);
