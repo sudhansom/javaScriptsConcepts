@@ -8,6 +8,14 @@ class Backpack {
     };
     this.lidOpen = lidOpen;
   }
+
+  toggleLid(lidOpen) {
+    this.toggleLid = lidOpen;
+  }
+  changeStrap(strapLengthL, strapLengthR) {
+    this.strapLength.left = strapLengthL;
+    this.strapLength.right = strapLengthR;
+  }
 }
 
 export default Backpack;
