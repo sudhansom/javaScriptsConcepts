@@ -12,3 +12,4 @@ console.log(myBag);
 
 const book = new Book("title", 100, "krishna", "1990-01-01", "2000-01-01", 33);
 console.log(book);
+const a = 1;
