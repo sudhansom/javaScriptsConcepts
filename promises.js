@@ -4,11 +4,12 @@ const promise = new Promise((resolve, reject) => {
   }, 1000);
 });
 
-console.log(promise);
+//console.log(promise);
 
 //promise.then(console.log).catch(console.log);
 const result = async () => {
-  const result = await promise;
-  console.log(result);
+  const result = await promise();
+  console.log(result.then(console.log));
+  return await result;
 };
 console.log(result);
