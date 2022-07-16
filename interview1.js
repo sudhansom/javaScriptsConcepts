@@ -17,4 +17,3 @@ let timer = setTimeout(() => {
 
 console.log(myArray.contains(7)); // 8
 clearTimeout(timer);
-// changes here...
