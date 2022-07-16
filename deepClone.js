@@ -86,4 +86,7 @@ const newData = mydata.teasers.map((teaser, indx) => {
   };
 });
 
-console.log(newData);
+const newData1 = Object.assign({}, mydata);
+newData1.teasers[0].borderColor = "blacks";
+
+console.log(mydata);
