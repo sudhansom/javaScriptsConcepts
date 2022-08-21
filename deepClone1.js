@@ -70,3 +70,23 @@ const teaserstack = {
       },
     ],
   };
+
+  const teaserstack1 = {
+    ...teaserstack,
+    teasers: teaserstack.teasers.map((teaser, index) => {
+        const override = (() => {
+            if(index===1){
+            return {
+                ...teaser,
+                description: 'sudhan'
+            }
+        }
+        return {}
+        })
+        return teaser
+    })
+  }
+
+  console.log(teaserstack1);
+
+  
